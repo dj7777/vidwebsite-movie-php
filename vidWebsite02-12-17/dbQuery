@@ -1,0 +1,22 @@
+https://oload.tv/embed/_qTRO5Nb6vY/The.Breakfast.Club.1985.720p.BrRip.x264.YIFY.MP4.mp4
+
+
+
+INSERT INTO `videos` (`id`, `title`, `clean_title`, `description`, `views_count`, `status`, `created`, `modified`, `users_id`,
+ `categories_id`, `filename`, `postername`, `duration`, `server1_streamango`, `server2_oload`, `server3_local`, `type`, 
+ `videoDownloadedLink`, `order`, `rotation`, `zoom`, `youtubeId`) VALUES 
+ ('7', 'The Emoji Movie', 'the-emoji-movie', 'The Emoji Movie', '0', 'a', '2017-12-10 00:00:00', '0000-00-00 00:00:00',
+  '1', '1', 'https://oload.tv/embed/8_4gsAgzj4c/SUB.0.720p.mp4',
+   'emojimovie', '1:36:07', NULL, 
+   'https://oload.tv/embed/8_4gsAgzj4c/SUB.0.720p.mp4', 
+   NULL, 'video', NULL, '1', '0', '1', NULL),
+   ('8', 'American Assasin', 'american-assasin', 'American Assasin', '0', 'a', '2017-12-10 00:00:00', '0000-00-00 00:00:00',
+  '1', '1', 'https://oload.tv/embed/KZ6GuXMet9k/American%2520Assassin%25202017%2520Watch%2520Online%2520Free%2520_%25238211%253B%2520Watch%2520Movies%2520for%2520Free%2520_%25238211%253B%2520Seehd.ws.MP4.mp4',
+   'american_assasin', '1:36:07', NULL, 
+   'https://oload.tv/embed/KZ6GuXMet9k/American%2520Assassin%25202017%2520Watch%2520Online%2520Free%2520_%25238211%253B%2520Watch%2520Movies%2520for%2520Free%2520_%25238211%253B%2520Seehd.ws.MP4.mp4', 
+   NULL, 'video', NULL, '1', '0', '1', NULL),
+   ('9', 'The Breakfast Club', 'the-breakfast-club', 'The Breakfast Club', '0', 'a', '2017-12-10 00:00:00', '0000-00-00 00:00:00',
+  '1', '1', 'https://oload.tv/embed/_qTRO5Nb6vY/The.Breakfast.Club.1985.720p.BrRip.x264.YIFY.MP4.mp4',
+   'the-breakfast-club', '1:36:07', NULL, 
+   'https://oload.tv/embed/_qTRO5Nb6vY/The.Breakfast.Club.1985.720p.BrRip.x264.YIFY.MP4.mp4', 
+   NULL, 'video', NULL, '1', '0', '1', NULL);
