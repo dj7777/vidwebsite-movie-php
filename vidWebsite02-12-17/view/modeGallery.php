@@ -89,22 +89,19 @@ $totalPages = ceil($total / $_POST['rowCount']);
                                         ?>
                                         <img src="<?php echo $imgGif; ?>" style="position: absolute; top: 0; display: none;" alt="<?php echo $value['title']; ?>" id="thumbsGIF<?php echo $value['id']; ?>" class="thumbsGIF img-responsive <?php echo $img_portrait; ?>  rotate<?php echo $value['rotation']; ?>" height="130px" />
                                     <?php } ?>                                        
-                                    <span class="duration"><?php echo Video::getCleanDuration($value['duration']); ?></span>
-                                </a>
+                                <!--  for hqvid  <span class="duration"><?php //echo Video::getCleanDuration($value['duration']); ?></span>
+                                -->
+                              <!-- for movie4u   <span class="duration"><?php echo Video::getCleanDuration($value['quality']); ?></span>
+                               --> 
+                               <span class="watch-view-count duration col-lg-3"><?php echo $value['quality']; ?></span>
+                              </a>
                                 <a href="<?php echo $global['webSiteRootURL']; ?>video/<?php echo $value['clean_title']; ?>" title="<?php echo $value['title']; ?>">
                                     <h2><?php echo $value['title']; ?></h2>
                                 </a>
-                                <span class="watch-view-count col-lg-6" itemprop="interactionCount"><?php echo number_format($value['views_count'], 0); ?> <?php echo __("Views"); ?></span>
-                                <?php
-                                $value['tags'] = Video::getTags($value['id']);
-                                foreach ($value['tags'] as $value2) {
-                                    if ($value2->label === __("Group")) {
-                                        ?>
-                                        <span class="label label-<?php echo $value2->type; ?> col-lg-6 group"><?php echo $value2->text; ?></span>
-                                        <?php
-                                    }
-                                }
-                                ?>
+                               <!-- for hqvid <span class="watch-view-count col-lg-6" itemprop="interactionCount"><?php echo number_format($value['views_count'], 0); ?> <?php echo __("Views"); ?></span>
+                                -->
+                                
+                             
                             </div>
                             <?php
                         }

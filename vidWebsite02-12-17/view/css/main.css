@@ -695,3 +695,12 @@ nav ul.items-container li ul.right-menus li{
         height: 180px;
     }
 }
+
+#imgMainVideo{
+    height: 210px;
+    width: 140px;
+}
+
+#recommendListMainVideo{
+    display: inline-block;
+}

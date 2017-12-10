@@ -12,7 +12,7 @@ if (empty($_SESSION['language'])) {
     <ul class="items-container">
         <li>
             <ul class="left-side">
-                <li>
+         <!--      <li>
                     <button class="btn btn-default navbar-btn pull-left" id="buttonMenu" ><span class="fa fa-bars"></span></button>
                     <script>
                         $('#buttonMenu').click(function (event) {
@@ -29,7 +29,7 @@ if (empty($_SESSION['language'])) {
                         });
                     </script>
                 </li>
-                <li>
+          --> <li>
                     <a class="navbar-brand" href="<?php echo $global['webSiteRootURL']; ?>" >
                         <img src="<?php echo $global['webSiteRootURL'], $config->getLogo(); ?>" alt="<?php echo $config->getWebSiteTitle(); ?>" class="img-responsive ">
                     </a>
@@ -66,34 +66,7 @@ if (empty($_SESSION['language'])) {
                 }
                 ?>
 
-                <li>
-                    <select class="selectpicker" id="navBarFlag" data-width="fit">
-                        <?php
-                        $flags = getEnabledLangs();
-                        foreach ($flags as $value) {
-                            $selected = "";
-                            if ($value == 'en') {
-                                $value = 'us';
-                            }
-                            if ($lang == $value) {
-                                $selected = 'selected="selected"';
-                            }
-                            echo "<option data-content='<span class=\"flag-icon flag-icon-{$value}\"></span>' value=\"{$value}\" {$selected}>{$value}</option>";
-                        }
-                        ?>
-                    </select>
-                    <script>
-                        $(function () {
-                            $('#navBarFlag').selectpicker('setStyle', 'btn-default');
-                            $('#navBarFlag').selectpicker('setStyle', 'navbar-btn', 'add');
-
-                            $('#navBarFlag').on('change', function () {
-                                var selected = $(this).find("option:selected").val();
-                                window.location.href = "<?php echo $global['webSiteRootURL']; ?>?lang=" + selected;
-                            });
-                        });
-                    </script>
-                </li>
+              
             </ul>
         </li>
     </ul>
